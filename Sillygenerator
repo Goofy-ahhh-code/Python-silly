@@ -1,0 +1,14 @@
+import random
+
+adjectives = ["Juicy", "Sexy", "Big", "Thick", "Girthy", "Shiny", "Wet", "Massive"]
+colors = ["Black", "White", "Brown"]
+words = ["Dick", "Cock", "Butt", "Ass",]
+
+adjective1 = random.choice(adjectives)
+adjective2 = random.choice(adjectives)
+
+color = random.choice(colors)
+
+words = random.choice(words)
+
+print(f"You have a {adjective1} {adjective2} {color} {words}")
