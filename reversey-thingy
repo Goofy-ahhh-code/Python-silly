@@ -1,0 +1,5 @@
+meth = input("enter special number: ")
+
+hairybawls = meth[:: -1]
+
+print(hairybawls)
