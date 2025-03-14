@@ -1,5 +1,8 @@
-meth = input("enter special number: ")
+num = input("Enter a number: ")
 
-hairybawls = meth[:: -1]
 
-print(hairybawls)
+if num[0] == "-":
+    num1 = "-" + num[:0: -1]
+else:
+    num1 = num[:: -1]
+print(num1)
