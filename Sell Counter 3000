@@ -1,0 +1,45 @@
+# Game Setup
+players = {}  # Dictionary to store player names and scores
+
+# Ask for player names
+while True:
+    name = input("Enter player name (type 'done' to continue): ").strip()
+    if name.lower() == "done":
+        break
+    elif name:
+        first_letter = name[0].lower()
+        if first_letter in players:
+            print(f"Warning: A player with the first letter '{first_letter}' already exists! Choose another name.")
+        else:
+            players[first_letter] = {"name": name, "score": 0}
+    else:
+        print("Please enter a valid name.")
+
+# Show the players list
+print("\nPlayers:")
+for letter, player in players.items():
+    print(f"{player['name']} ({letter})")
+
+# Scoring Loop
+while True:
+    word = input("\nEnter score ('first letter + 1' to add, 'first letter + 0' to subtract, 'end' to finish): ").lower()
+    
+    if word == "end":
+        # Determine the MVP (max scorer)
+        max_score = max(players.values(), key=lambda p: p["score"])["score"]
+        mvp_players = [p["name"] for p in players.values() if p["score"] == max_score]
+
+        # Display final scores
+        print("\nGame over! Final scores:")
+        for player in players.values():
+            mvp_tag = " 🏆 MVP" if player["name"] in mvp_players else ""
+            print(f"{player['name']}: {player['score']}{mvp_tag}")
+        break
+    elif len(word) == 2 and word[0] in players and word[1] in "01":
+        player = players[word[0]]
+        if word[1] == "1":
+            player["score"] += 1
+        else:
+            player["score"] -= 1
+    else:
+        print("Invalid input. Use the first letter of the name followed by '1' to add or '0' to subtract.")
