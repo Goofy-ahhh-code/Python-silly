@@ -1,10 +1,11 @@
 class Tamagotchi: 
-    def __init__(self, name):
+    def __init__(self, name, breed):# -*- coding: latin-1 -*-
         self.name = name
+        self.breed = breed
         self.happylevel = 1
     
     def bark(self):
-        print(f"{self.name} says Woof!")
+        print(f"{self.name} the {self.breed} says Woof!")
     
     def pet(self):
         self.happylevel = self.happylevel + 1
@@ -18,7 +19,8 @@ class Tamagotchi:
         
         
 uinput = input("name your Tamagotchi: ")
-my_dog = Tamagotchi(uinput)
+uinput2 = input("what breed is your Tamagotchi: ")
+my_dog = Tamagotchi(uinput, uinput2)
 opt = "1"
 my_dog.bark() 
 
