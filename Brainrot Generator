@@ -1,0 +1,15 @@
+import random
+
+rotnouns = ["skibidi-toilet", "ohio", "gyatt", "rizzler", "hawk-tuah", "chad"]
+rotjectives = ["sigma", "rizzling", "auramaxxing", "capping", "edging", "alpha", "beta"]
+
+rotnouns1 = random.choice(rotnouns)
+rotjectives1 = random.choice(rotjectives)
+rotjectives2 = random.choice(rotjectives)
+rotput = input("get a phrase:")
+
+if rotput == "rot":
+    print(f"you are a {rotjectives1} {rotjectives2} {rotnouns1}")
+
+list = [""]
+f = input("Enter new list phrase:")
