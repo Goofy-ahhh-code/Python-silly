@@ -1,0 +1,52 @@
+import random
+
+class Person:
+    def __init__(self, name, lname, job):
+        self.name = name
+        self.lname = lname
+        self.job = job
+    def to_string(self):
+        print(f"Hi, I am {self.name} {self.lname}, I am a {self.job}")
+        
+#class PersonFactory:
+names = [ "Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah", "Ivy", "Jack",
+    "Kathy", "Liam", "Mona", "Nathan", "Olivia", "Paul", "Quincy", "Rachel", "Sam", "Tina",
+    "Ursula", "Vince", "Walter", "Xander", "Yara", "Zane", "Amelia", "Benjamin", "Catherine",
+    "Daniel", "Emily", "Freddie", "Georgia", "Henry", "Isabelle", "James", "Kylie", "Lily",
+    "Matthew", "Nina", "Oscar", "Penny", "Quinn", "Ryan", "Sophia", "Tom", "Una", "Victor",
+    "Willow", "Xena", "Yasmin", "Zara", "Adrian", "Briana", "Carter", "Diana", "Evan",
+    "Fiona", "Gabe", "Holly", "Ian", "Jade", "Keith", "Luca", "Megan", "Noah", "Olga",
+    "Paige", "Quincy", "Riley", "Samantha", "Terry", "Ulysses", "Vera", "Wesley", "Xander",
+    "Yvette", "Zoe", "Aaron", "Beth", "Chloe", "Derek", "Emma", "Finn", "Gina", "Harry",
+    "Iris", "Jake", "Kyle", "Laura", "Mike", "Nadia", "Oscar", "Peter", "Quinn", "Reagan",
+    "Seth", "Tracy", "Ursula", "Vernon", "Wendy", "Xander", "Yvonne", "Zane", "Adeline",
+    "Blake", "Chad", "Dylan", "Ethan", "Faith", "Grayson", "Harrison", "Isabella", "Jonah",
+    "Kendall", "Leo", "Maya", "Nash", "Olive", "Parker", "Quincy", "Reed", "Sean"]
+    
+lnames = [ "Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez",
+    "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin",
+    "Lee", "Perez", "Thompson", "White", "Harris", "Sanchez", "Clark", "Ramirez", "Lewis", "Roberts",
+    "Walker", "Young", "Allen", "King", "Scott", "Green", "Adams", "Baker", "Nelson", "Hall",
+    "Rivera", "Campbell", "Mitchell", "Carter", "Robinson", "Gomez", "Phillips", "Evans", "Turner", "Diaz",
+    "Parker", "Cruz", "Edwards", "Collins", "Reyes", "Stewart", "Morris", "Ortiz", "Morgan", "Cooper",
+    "Peterson", "Bailey", "Howard", "Wong", "Kim", "Singh", "Sharma", "Hughes", "Price", "Ward",
+    "Gray", "Ramsey", "Bennett", "Wood", "Barnes", "Ross", "Henderson", "Cole", "Jenkins", "Perry",
+    "Powell", "Long", "Pierce", "Scott", "Chang", "Simmons", "Foster", "Graham", "Kelly", "Mitchell",
+    "Sullivan", "Murphy", "Cook", "Rogers", "Gutierrez", "West", "Wright", "James", "Fowler", "Hunter",
+    "Duncan", "Chapman", "Fox", "Marshall", "Oliver", "Stevens", "Schmidt", "Brock", "Chavez", "Kimberly"]
+
+jobs = [
+    "Software Developer", "Data Scientist", "Doctor", "Nurse", "Teacher", "Accountant", 
+    "Chef", "Electrician", "Carpenter", "Artist", "Graphic Designer", "Photographer", 
+    "Journalist", "Waiter", "Marketing Manager", "Social Media Manager", "Architect", 
+    "Engineer", "Plumber", "Firefighter", "Police Officer", "Web Developer", "Construction Worker", 
+    "Biologist", "Pharmacist", "Librarian", "Scientist", "HR Manager", "Project Manager", 
+    "Consultant", "Veterinarian", "Dental Hygienist", "Civil Engineer", "Surveyor", 
+    "Taxi Driver", "Flight Attendant", "Pilot", "Security Guard", "Barber", "Makeup Artist", 
+    "Interior Designer", "Counselor", "Legal Assistant", "Judge"]
+
+   
+
+person = Person(random.choice(names), random.choice(lnames), random.choice(jobs))
+person.to_string()
+        
