@@ -1,0 +1,9 @@
+# Numbers
+x = 10
+y = 3.14
+
+# Strings
+name = "John"
+
+# Lists (Collections of items)
+fruits = ["apple", "banana", "cherry"]
