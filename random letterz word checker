@@ -1,0 +1,25 @@
+words = [
+    "apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew", "kiwi", "lemon", 
+    "mango", "nectarine", "orange", "pear", "plum", "quince", "raspberry", "strawberry", "tangerine", "ugli", 
+    "vinegar", "watermelon", "xigua", "yam", "zucchini", "airplane", "ball", "cat", "dog", "elephant", 
+    "fox", "giraffe", "hat", "ice", "jacket", "kite", "lemonade", "moon", "night", "octopus", 
+    "piano", "quilt", "rocket", "sun", "turtle", "umbrella", "volcano", "whale", "xylophone", 
+    "yellow", "zebra", "acorn", "barn", "cloud", "dolphin", "eggplant", "fish", "guitar", "hippopotamus", 
+    "ink", "jungle", "kangaroo", "lighthouse", "mountain", "nest", "orange", "panda", "quicksand", 
+    "river", "sailboat", "train", "unicorn", "vulture", "wolf", "xenon", "yarn", "zoo", 
+    "apple", "butterfly", "carrot", "daisy", "elephant", "fox", "guitar", "hazel", "iceberg", 
+    "jellyfish", "kite", "ladybug", "moose", "ninja", "owl", "penguin", "quail", "rabbit", "squirrel", 
+    "tiger", "umbrella", "vampire", "whisker", "xylophone", "yellow", "zebra", "apricot", 
+    "banana", "chocolate", "doughnut", "eclair", "fudge", "gelato", "honey", "icecream", "jellybean", 
+    "kiwi", "lemon", "muffin", "nutella", "orange", "pie", "quiche", "ravioli", "sundae", "tart", 
+    "utensils", "vanilla", "waffle", "xmas", "yogurt", "zucchini", "ant", "bee", "caterpillar", 
+    "dog", "elephant", "flea", "goose", "hen", "insect", "jaguar", "kangaroo", "lion", "monkey", 
+    "newt", "octopus", "parrot", "quail", "rabbit", "snake", "turtle", "urchin", "vulture", "walrus", 
+    "xenopus", "yak", "zebra", "air", "bird", "cloud", "dust", "earth", "fog", "gas", "haze", 
+    "ice", "jet", "knot", "light", "mist", "noon", "overcast", "precipitation", "quicksand", 
+    "rain", "snow", "temperature", "underwater", "vapor", "wind", "x-ray", "yellow", "zephyr", 
+    "antique", "beauty", "ceramic", "decoration", "engraving", "furniture", "glass", "history", 
+    "icon", "jewel", "knickknack", "lamp", "marble", "nightstand", "ornament", "piano", "quilt", 
+    "rustic", "silver", "tapestry", "unique", "vintage", "wood", "xylophone", "yarn", "zinc"]
+uinput =  input("enter random gibberish below").lower
+if uinput 
